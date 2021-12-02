@@ -1,0 +1,56 @@
+@font-face {font-family: "Playlist-Script";
+  src: url("1fed4454352f201d52b65ca5480afb2d.eot"); /* IE9*/
+  src: url("1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/fonts/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), /* chrome、firefox */
+  url("1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), /* chrome、firefox */
+  url("1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("1fed4454352f201d52b65ca5480afb2d.svg#Playlist-Script") format("svg"); /* iOS 4.1- */
+}
+
+body{
+	background-color:white;
+}
+div.gallery{
+	padding-left:200px;
+	padding-top:30px;
+}
+div.service{
+	display:inline-block;
+	margin:10px;
+	position:relative;
+}
+
+
+
+.overlay {
+	width: 100%;
+	height:100%;
+	position:absolute;
+	color: blue;
+	top:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity:0;
+	background:#00eafa;
+	transition:2s;
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  padding-bottom: 18px;
+}
+.text{
+  font-size: 20px;
+  color:#000000;
+	position: absolute;
+	margin: 0 auto;
+}
+.overlay{
+  text-decoration: none;
+}
+div.service:hover .overlay{
+	opacity:1;
+	transition-timing-function: ease;
+}
